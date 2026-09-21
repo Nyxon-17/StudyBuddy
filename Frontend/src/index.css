@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slideUp {
+    animation: slideUp 0.7s ease forwards;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes floatReverse {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.animate-floatDelay {
+    animation: float 4s ease-in-out 2.5s infinite;
+}
+
+.animate-floatReverse {
+    animation: floatReverse 4s ease-in-out infinite;
+}
+
+
+
+/* Chat Scrollbar */
+.study-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.study-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.study-scrollbar::-webkit-scrollbar-thumb {
+    background: #c4b5fd;
+    border-radius: 999px;
+}
+
+.study-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #8b5cf6;
+}
+
+
