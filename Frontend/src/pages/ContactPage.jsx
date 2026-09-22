@@ -77,6 +77,8 @@ export default function Contact() {
                   {/* Designd circles */}
                   <div className="absolute -right-16 -top-16 w-48 h-48 bg-green-500/50 animate-float rounded-full"></div>
                   <div className="absolute -left-20 bottom-0 w-56 h-56 bg-indigo-500/50 animate-floatReverse rounded-full"></div>
+                  <div className="absolute right-20 bottom-60 w-21 h-21 bg-indigo-200/10 animate-float rounded-full"></div>
+                  <div className="absolute left-30 top-26 w-16 h-16 bg-blue-300/20 animate-floatReverse rounded-full"></div>
 
                   <div className="relative z-10">
                     <span className="text-blue-600 text-xl font-bold uppercase tracking-wider">
@@ -297,7 +299,7 @@ export default function Contact() {
                     {/* Submit button */}
                     <button
                       type="submit"
-                      className="mt-6 w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 focus:ring-4 focus:ring-blue-200 transition-all duration-300"
+                      className="mt-6 w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-green-700 text-white font-semibold hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 focus:ring-4 focus:ring-blue-200 transition-all duration-300"
                     >
                       Send Message
 
@@ -318,29 +320,6 @@ export default function Contact() {
                   </form>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Bottom CTA */}
-        <section className="pb-20">
-          <div className="max-w-7xl mx-auto px-5">
-            <div className="rounded-3xl bg-linear-to-r from-blue-600 to-indigo-600 px-8 py-12 md:px-14 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-white">
-                Have an idea for StudyBuddy?
-              </h2>
-
-              <p className="mt-4 text-blue-100 max-w-2xl mx-auto">
-                We are always interested in hearing ideas that can make
-                learning easier and more useful for students.
-              </p>
-
-              <a
-                href="mailto:hello@studybuddy.com"
-                className="inline-flex mt-7 px-6 py-3 rounded-xl bg-white text-blue-700 font-semibold hover:bg-gray-100 hover:scale-105 transition-all duration-300"
-              >
-                Email Us
-              </a>
             </div>
           </div>
         </section>

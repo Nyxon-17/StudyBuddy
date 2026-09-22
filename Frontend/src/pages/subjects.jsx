@@ -3,7 +3,7 @@ import {
     FaPlus,
     FaSearch,
     FaBookOpen,
-    FaCheckCircle,
+    FaCheck,
     FaClock,
     FaArrowRight,
     FaTimes,
@@ -91,19 +91,19 @@ const Subjects = () => {
 
     const colors = {
         purple: {
-            bg: "bg-[#e7d8ff]",
+            bg: "bg-purple-300/80",
             icon: "bg-[#7c3aed]",
             text: "text-[#6d28d9]",
             bar: "bg-[#8b5cf6]",
         },
         orange: {
-            bg: "bg-[#ffe0bd]",
+            bg: "bg-orange-300/80",
             icon: "bg-[#f97316]",
             text: "text-[#ea580c]",
             bar: "bg-[#fb923c]",
         },
         green: {
-            bg: "bg-[#d7f4dc]",
+            bg: "bg-green-300/80",
             icon: "bg-[#16a34a]",
             text: "text-[#15803d]",
             bar: "bg-[#4ade80]",
@@ -238,7 +238,7 @@ const Subjects = () => {
 
                             <button
                                 onClick={() => setShowAddModal(true)}
-                                className="flex items-center justify-center gap-2 px-5 py-3 bg-[#20202a] text-white rounded-xl font-semibold hover:bg-[#34343f] transition"
+                                className="flex items-center justify-center gap-2 px-5 py-3 bg-green-800 text-white rounded-xl font-semibold hover:bg-[#34343f] transition"
                             >
                                 <FaPlus />
                                 Add Subject
@@ -378,7 +378,7 @@ const Subjects = () => {
                                         </p>
                                     </div>
 
-                                    <div className="bg-[#20202a] text-white rounded-2xl p-5">
+                                    <div className="bg-green-800 text-white rounded-2xl p-5">
                                         <div className="flex items-center gap-2 text-sm text-gray-300">
                                             <FaClock />
                                             Current Topic
@@ -424,20 +424,20 @@ const Subjects = () => {
                                                         className="w-full flex items-center gap-4 p-4 rounded-xl border border-gray-100 hover:border-gray-300 hover:bg-gray-50 transition text-left"
                                                     >
                                                         <div
-                                                            className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 ${
+                                                            className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${
                                                                 topic.completed
-                                                                    ? "bg-[#16a34a] text-white"
+                                                                    ? "border-[#65a872] bg-[#65a872] text-white"
                                                                     : "border-2 border-gray-300 text-transparent"
                                                             }`}
                                                         >
-                                                            <FaCheckCircle className="text-sm" />
+                                                            <FaCheck size={13} />
                                                         </div>
 
                                                         <div className="flex-1 min-w-0">
                                                             <p
                                                                 className={`font-medium ${
                                                                     topic.completed
-                                                                        ? "line-through text-gray-400"
+                                                                        ? "text-gray-400"
                                                                         : "text-gray-800"
                                                                 }`}
                                                             >
@@ -461,7 +461,7 @@ const Subjects = () => {
                             {/* Right Panel */}
                             <div className="space-y-6">
                                 {/* Overall Progress */}
-                                <div className="bg-[#20202a] text-white rounded-3xl p-6 sm:p-7">
+                                <div className="bg-green-800 text-white rounded-3xl p-6 sm:p-7">
                                     <div className="flex items-center justify-between">
                                         <div>
                                             <p className="text-gray-400 text-sm">
@@ -650,7 +650,7 @@ const Subjects = () => {
 
                         <button
                             onClick={addSubject}
-                            className="w-full mt-6 py-3.5 rounded-xl bg-[#20202a] text-white font-semibold hover:bg-[#34343f] transition"
+                            className="w-full mt-6 py-3.5 rounded-xl bg-green-800 text-white font-semibold hover:bg-[#34343f] transition"
                         >
                             Add Subject
                         </button>

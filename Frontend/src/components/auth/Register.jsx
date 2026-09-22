@@ -61,7 +61,7 @@ const Register = () => {
 
             {/* Logo */}
             <div className="relative z-10 flex items-center gap-3">
-              <div className="w-11 h-11 rounded-xl bg-blue-600 flex items-center justify-center text-white shrink-0">
+              <div className="w-11 h-11 rounded-xl bg-green-700 flex items-center justify-center text-white shrink-0">
                 <FaBookOpen size={20} />
               </div>
 
@@ -137,7 +137,7 @@ const Register = () => {
             <div className="w-full max-w-md">
               {/* Mobile logo */}
               <div className="lg:hidden flex items-center justify-center gap-3 mb-8 sm:mb-10">
-                <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-600 flex items-center justify-center text-white shrink-0">
+                <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-green-700 flex items-center justify-center text-white shrink-0">
                   <FaBookOpen size={18} />
                 </div>
 
@@ -148,7 +148,7 @@ const Register = () => {
 
               {/* Heading */}
               <div className="mb-7 sm:mb-8">
-                <p className="text-white font-bold text-xs sm:text-2xl mb-2 sm:mb-3 text-center font-sans bg-blue-500 rounded-2xl mx-25 my-5 p-2">
+                <p className="text-white font-bold text-xs sm:text-2xl mb-2 sm:mb-3 text-center font-sans bg-green-500 rounded-2xl mx-25 my-5 p-2">
                   GET STARTED
                 </p>
 
@@ -299,7 +299,7 @@ const Register = () => {
                 {/* Create account */}
                 <button
                   type="submit"
-                  className="w-full h-12 sm:h-13 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold rounded-xl flex items-center justify-center gap-3 transition-all duration-200 shadow-lg shadow-blue-100 hover:shadow-blue-200 text-sm sm:text-base"
+                  className="w-full h-12 sm:h-13 bg-green-700 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold rounded-xl flex items-center justify-center gap-3 transition-all duration-200 shadow-lg shadow-blue-100 hover:shadow-blue-200 text-sm sm:text-base"
                 >
                   Create Account
                   <FaArrowRight size={13} />

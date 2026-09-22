@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../../src/assets/logo.png"
 import {
     FaBookOpen,
     FaHome,
@@ -64,10 +65,9 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
     const closeSidebar = () => setIsOpen(false);
 
     const navLinkClass = ({ isActive }) =>
-        `flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium transition ${
-            isActive
-                ? "bg-blue-50 text-blue-600"
-                : "text-gray-500 hover:bg-gray-50 hover:text-gray-900"
+        `flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium transition ${isActive
+            ? "bg-blue-50 text-blue-600"
+            : "text-gray-500 hover:bg-gray-50 hover:text-gray-900"
         }`;
 
     return (
@@ -82,24 +82,20 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 
             {/* Sidebar */}
             <aside
-                className={`fixed top-0 left-0 z-50 h-screen w-64 bg-white border-r border-gray-100 flex flex-col transition-transform duration-300 ${
-                    isOpen ? "translate-x-0" : "-translate-x-full"
-                } lg:translate-x-0`}
+                className={`fixed top-0 left-0 z-50 h-screen w-64 bg-white border-r border-gray-100 flex flex-col transition-transform duration-300 ${isOpen ? "translate-x-0" : "-translate-x-full"
+                    } lg:translate-x-0`}
             >
                 {/* Logo */}
-                <div className="h-20 px-6 flex items-center justify-between border-b border-gray-100">
+                <div className="h-20 px-3 flex items-center justify-between border-b border-gray-100">
                     <NavLink
                         to="/"
                         onClick={closeSidebar}
-                        className="flex items-center gap-3"
+                        className="flex items-center gap-3 group"
                     >
-                        <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white">
-                            <FaBookOpen size={18} />
-                        </div>
-
-                        <span className="text-xl font-bold text-gray-900">
-                            Study<span className="text-blue-600">Buddy</span>
-                        </span>
+                            <div className="h-4 w-60 absolute -top-7">
+                                <img src={logo} alt="" />
+                            </div>
+                        
                     </NavLink>
 
                     {/* Mobile Close */}

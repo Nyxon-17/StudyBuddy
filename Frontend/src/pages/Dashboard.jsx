@@ -27,7 +27,7 @@ const Dashboard = () => {
             icon: <FaBookOpen />,
             iconBg: "bg-[#ede9fe]",
             iconColor: "text-[#6d28d9]",
-            boxBg: "bg-blue-200/90",
+            boxBg: "bg-blue-300/90",
 
         },
         {
@@ -36,7 +36,7 @@ const Dashboard = () => {
             icon: <FaClock />,
             iconBg: "bg-[#fef3c7]",
             iconColor: "text-[#d97706]",
-            boxBg: "bg-yellow-100/90",
+            boxBg: "bg-yellow-200/90",
         },
         {
             title: "Completed Tasks",
@@ -44,7 +44,7 @@ const Dashboard = () => {
             icon: <FaTasks />,
             iconBg: "bg-[#dcfce7]",
             iconColor: "text-[#15803d]",
-            boxBg: "bg-red-200/90",
+            boxBg: "bg-red-300/90",
         },
         {
             title: "Overall Progress",
@@ -52,7 +52,7 @@ const Dashboard = () => {
             icon: <FaChartLine />,
             iconBg: "bg-[#fce7f3]",
             iconColor: "text-[#be185d]",
-            boxBg: "bg-green-200/90",
+            boxBg: "bg-green-300/90",
         },
     ];
 
@@ -219,7 +219,7 @@ const Dashboard = () => {
                         </div>
 
                         {/* Overall progress */}
-                        <div className="bg-[#20202a] rounded-3xl p-5 sm:p-7 text-white shadow-[0_8px_30px_rgba(32,32,42,0.12)]">
+                        <div className="bg-indigo-900/90 rounded-3xl p-5 sm:p-7 text-white shadow-[0_8px_30px_rgba(32,32,42,0.12)]">
                             <div className="flex items-start justify-between">
                                 <div>
                                     <h2 className="text-lg font-bold">

@@ -257,7 +257,7 @@ const Tasks = () => {
 
                         <button
                             onClick={openAddModal}
-                            className="flex w-fit items-center gap-2 rounded-2xl bg-[#292522] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#403b37]"
+                            className="flex w-fit items-center gap-2 rounded-2xl bg-green-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#403b37]"
                         >
                             <FaPlus size={12} />
                             Add Task
@@ -320,12 +320,12 @@ const Tasks = () => {
                         </div>
 
                         {/* AI Card */}
-                        <div className="relative overflow-hidden rounded-[28px] bg-[#302b38] p-6 text-white sm:col-span-2 xl:col-span-1">
-                            <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-[#9a7bff] opacity-30 blur-2xl" />
+                        <div className="relative overflow-hidden rounded-3xl bg-green-600 p-6 text-white sm:col-span-2 xl:col-span-1">
+                            <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-[#9a7bff] opacity-30 blur-2xl"/>
 
                             <div className="relative">
                                 <div className="mb-4 flex items-center gap-3">
-                                    <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#9a7bff]">
+                                    <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#0e4b1e]">
                                         <FaRobot />
                                     </div>
 
@@ -386,11 +386,10 @@ const Tasks = () => {
                                     <button
                                         key={item}
                                         onClick={() => setFilter(item)}
-                                        className={`rounded-lg px-4 py-2 text-xs font-semibold transition ${
-                                            filter === item
+                                        className={`rounded-lg px-4 py-2 text-xs font-semibold transition ${filter === item
                                                 ? "bg-white text-[#292522] shadow-sm"
                                                 : "text-[#99928d] hover:text-[#292522]"
-                                        }`}
+                                            }`}
                                     >
                                         {item}
                                     </button>
@@ -418,22 +417,20 @@ const Tasks = () => {
                                 filteredTasks.map((task) => (
                                     <div
                                         key={task.id}
-                                        className={`group flex flex-col gap-4 rounded-2xl border p-4 transition md:flex-row md:items-center ${
-                                            task.completed
+                                        className={`group flex flex-col gap-4 rounded-2xl border p-4 transition md:flex-row md:items-center ${task.completed
                                                 ? "border-[#e8eee8] bg-[#fbfdfb]"
                                                 : "border-[#eeeae4] bg-white hover:border-[#ded8d0] hover:shadow-sm"
-                                        }`}
+                                            }`}
                                     >
                                         {/* Checkbox */}
                                         <button
                                             onClick={() =>
                                                 toggleTask(task.id)
                                             }
-                                            className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border transition ${
-                                                task.completed
+                                            className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border transition ${task.completed
                                                     ? "border-[#65a872] bg-[#65a872] text-white"
                                                     : "border-[#ddd7d0] bg-white text-transparent hover:border-[#9a7bff]"
-                                            }`}
+                                                }`}
                                         >
                                             <FaCheck size={13} />
                                         </button>
@@ -442,21 +439,19 @@ const Tasks = () => {
                                         <div className="min-w-0 flex-1">
                                             <div className="flex flex-wrap items-center gap-2">
                                                 <h3
-                                                    className={`font-semibold ${
-                                                        task.completed
-                                                            ? "text-[#aaa5a0] line-through"
+                                                    className={`font-semibold ${task.completed
+                                                            ? "text-[#aaa5a0] "
                                                             : "text-[#302c29]"
-                                                    }`}
+                                                        }`}
                                                 >
                                                     {task.title}
                                                 </h3>
 
                                                 <span
-                                                    className={`rounded-full px-2.5 py-1 text-[10px] font-bold ${
-                                                        PRIORITY_STYLES[
-                                                            task.priority
+                                                    className={`rounded-full px-2.5 py-1 text-[10px] font-bold ${PRIORITY_STYLES[
+                                                        task.priority
                                                         ]
-                                                    }`}
+                                                        }`}
                                                 >
                                                     {task.priority}
                                                 </span>

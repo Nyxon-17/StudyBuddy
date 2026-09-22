@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/logo.png"
 
 const quickLinks = ["Home", "About", "Services", "Contact"];
 
@@ -19,19 +20,13 @@ const Footer = () => {
 
                     {/* Brand */}
                     <div>
-                        <a href="#" className="flex items-center gap-3 mb-5">
-                            <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
-                                <span className="text-white text-xl font-bold">
-                                    S
-                                </span>
+                        <a href="/" className="flex items-center gap-3 group">
+                            <div className="h-4 w-60 relative z-10 -top-15">
+                                <img src={logo} alt="" />
                             </div>
-
-                            <span className="text-2xl font-bold text-white">
-                                Study<span className="text-blue-500">Buddy</span>
-                            </span>
                         </a>
 
-                        <p className="text-gray-400 leading-7 text-sm">
+                        <p className="text-gray-400 leading-7 p-10 text-sm">
                             StudyBuddy helps students learn, organize their
                             studies, and manage their academic journey in one
                             simple platform.

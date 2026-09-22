@@ -103,7 +103,7 @@ const Login = () => {
 
                         {/* Logo */}
                         <div className="flex items-center gap-3 mb-10 lg:mb-14">
-                            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-600 flex items-center justify-center text-white">
+                            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-green-700 flex items-center justify-center text-white">
                                 <FaBookOpen size={19} />
                             </div>
 
@@ -209,7 +209,7 @@ const Login = () => {
                                         <button
                                             type="submit"
                                             disabled={loading}
-                                            className="w-full h-12 sm:h-13 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-semibold rounded-xl flex items-center justify-center gap-3 transition shadow-lg shadow-blue-100"
+                                            className="w-full h-12 sm:h-13 bg-green-700 hover:bg-blue-700 disabled:bg-blue-400 text-white font-semibold rounded-xl flex items-center justify-center gap-3 transition shadow-lg shadow-blue-100"
                                         >
                                             {loading ? (
                                                 "Sending OTP..."
@@ -332,7 +332,7 @@ const Login = () => {
                                         <button
                                             type="submit"
                                             disabled={loading}
-                                            className="w-full h-12 sm:h-13 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-semibold rounded-xl flex items-center justify-center gap-3 transition shadow-lg shadow-blue-100"
+                                            className="w-full h-12 sm:h-13 bg-green-700 hover:bg-blue-700 disabled:bg-blue-400 text-white font-semibold rounded-xl flex items-center justify-center gap-3 transition shadow-lg shadow-blue-100"
                                         >
                                             {loading ? (
                                                 "Verifying..."
@@ -371,12 +371,12 @@ const Login = () => {
                     </div>
 
                     {/* Right Panel */}
-                    <div className="hidden lg:flex relative overflow-hidden bg-linear-to-br from-blue-600 via-blue-600 to-indigo-700 p-10 xl:p-14 text-white flex-col justify-between min-h-175">
+                    <div className="hidden lg:flex relative overflow-hidden bg-linear-to-br from-green-600 via-green-600 to-indigo-700 p-10 xl:p-14 text-white flex-col justify-between min-h-175">
 
-                        {/* Background Decorations */}
-                        <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-white/10" />
-                        <div className="absolute -bottom-30 -left-25 w-96 h-96 rounded-full bg-indigo-400/20" />
-                        <div className="absolute top-1/2 right-10 w-32 h-32 rounded-full bg-white/5" />
+                        {/* Background design*/}
+                        <div className="absolute animate-floatDelay -top-32 -right-32 w-96 h-96 rounded-full bg-white/10" />
+                        <div className="absolute animate-floatReverse -bottom-30 -left-25 w-96 h-96 rounded-full bg-indigo-400/20" />
+                        <div className="absolute animate-ping top-1/2 right-10 w-32 h-32 rounded-full bg-white/15" />
 
                         {/* Content */}
                         <div className="relative z-10 max-w-lg">
@@ -465,7 +465,7 @@ const Login = () => {
                                     </div>
 
                                     <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                                        <div className="w-[78%] h-full bg-blue-600 rounded-full" />
+                                        <div className="w-[78%] h-full bg-green-700 rounded-full" />
                                     </div>
                                 </div>
                             </div>

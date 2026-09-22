@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../assets/logo.png"
 
 const navLinks = [
     { name: "Home", path: "/" },
@@ -21,15 +22,9 @@ const Navebar = () => {
 
                 {/* Logo */}
                 <a href="/" className="flex items-center gap-3 group">
-                    <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-300">
-                        <span className="text-white text-xl font-bold">
-                            S
-                        </span>
+                    <div className="h-4 w-60 absolute -top-7">
+                        <img src={logo} alt="" />
                     </div>
-
-                    <span className="text-2xl font-bold text-gray-900">
-                        Study<span className="text-blue-600">Buddy</span>
-                    </span>
                 </a>
 
                 {/* Right */}
@@ -38,7 +33,7 @@ const Navebar = () => {
                     {/* Get Started */}
                     <NavLink
                         to="/register"
-                        className="hidden sm:block text-white bg-blue-600 hover:bg-blue-700 hover:scale-105 hover:shadow-lg focus:ring-4 focus:ring-blue-200 font-semibold rounded-xl text-sm px-5 py-2.5 transition-all duration-300"
+                        className="hidden sm:block text-white bg-green-700 hover:bg-blue-700 hover:scale-105 hover:shadow-lg focus:ring-4 focus:ring-blue-200 font-semibold rounded-xl text-sm px-5 py-2.5 transition-all duration-300"
                     >
                         Get Started
                     </NavLink>
@@ -106,7 +101,7 @@ const Navebar = () => {
                             <NavLink
                                 to="/register"
                                 onClick={() => setOpen(false)}
-                                className="block w-full text-center text-white bg-blue-600 hover:bg-blue-700 hover:shadow-lg font-semibold rounded-xl px-5 py-2.5 transition-all duration-300"
+                                className="block w-full text-center text-white bg-green-700 hover:bg-blue-700 hover:shadow-lg font-semibold rounded-xl px-5 py-2.5 transition-all duration-300"
                             >
                                 Get Started
                             </NavLink>

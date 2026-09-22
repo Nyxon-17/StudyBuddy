@@ -88,22 +88,39 @@ const Profile = () => {
                         {/* Profile Card */}
                         <div className="overflow-hidden rounded-4xl border border-[#eeeae4] bg-white shadow-sm">
                             {/* Cover */}
-                            <div
-                                className="relative h-52 overflow-hidden bg-cover bg-center"
-                                style={{
-                                    backgroundImage: `url('${PROFILE_BACKGROUND}')`,
-                                }}
-                            >
-                                <div className="absolute inset-0 bg-black/20" />
 
-                                <div className="absolute left-7 top-7 z-10">
-                                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
-                                        StudyBuddy Profile
-                                    </p>
+                            <div>
+                                <div className="absolute right-16 z-50 top-30 w-30 h-30 bg-green-500/50 animate-float rounded-full"></div>
+                                <div className="absolute right-60 z-50 top-30 w-20 h-20 bg-green-500/50 animate-float rounded-full"></div>
+                                <div className="absolute left-200 top-50 z-50 w-15 h-15 bg-indigo-500/50 animate-floatReverse rounded-full"></div>
+                                <div className="absolute rounded-full h-2 w-2 bg-white opacity-50 left-250 top-60 animate-ping z-50"></div>
+                                <div className="absolute rounded-full h-2 w-2 bg-white opacity-50 left-225 top-40 animate-ping z-50"></div>
+                                <div className="absolute rounded-full h-1 w-1 bg-white opacity-50 left-210 top-65 animate-ping z-50"></div>
+                                <div className="absolute rounded-full h-2 w-2 bg-white opacity-50 right-200 top-50 animate-ping z-50"></div>
+                                <div className="absolute rounded-full h-2 w-2 bg-white opacity-50 left-250 top-50 animate-ping z-50"></div>
+                                <div className="absolute rounded-full h-1 w-1 bg-white opacity-50 left-150 top-40 animate-ping z-50"></div>
+                                <div className="absolute rounded-full h-2 w-2 bg-white opacity-50 left-150 bottom-50 animate-ping z-50"></div>
+                                <div className="absolute rounded-full h-2 w-2 bg-white opacity-50 right-230 bottom-36 animate-ping z-50"></div>
+                                <div className="absolute rounded-full h-2 w-2 bg-white opacity-50 right-30 bottom-50 animate-ping z-50"></div>
 
-                                    <h2 className="mt-2 max-w-md text-2xl font-bold text-white">
-                                        Your learning identity, your way.
-                                    </h2>
+                                <div
+
+                                    className="relative h-52 overflow-hidden bg-cover bg-center"
+                                    style={{
+                                        backgroundImage: `url('${PROFILE_BACKGROUND}')`,
+                                    }}
+                                >
+                                    <div className="absolute inset-0 bg-black/20" />
+
+                                    <div className="absolute left-7 top-7 z-10">
+                                        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
+                                            StudyBuddy Profile
+                                        </p>
+
+                                        <h2 className="mt-2 max-w-md text-2xl font-bold text-white">
+                                            Your learning identity, your way.
+                                        </h2>
+                                    </div>
                                 </div>
                             </div>
 

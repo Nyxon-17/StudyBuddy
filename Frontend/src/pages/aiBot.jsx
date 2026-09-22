@@ -103,7 +103,7 @@ const AiBot = () => {
                     <div className="shrink-0 px-5 sm:px-6 py-4 border-b border-white/20 flex items-center justify-between">
                         <div className="flex items-center gap-3">
                             <div className="relative">
-                                <div className="w-11 h-11 rounded-2xl bg-[#20202a] text-white flex items-center justify-center">
+                                <div className="w-11 h-11 rounded-2xl bg-green-800 text-white flex items-center justify-center">
                                     <FaRobot size={18} />
                                 </div>
 
@@ -151,7 +151,7 @@ const AiBot = () => {
                                     <div
                                         className={`mt-1 px-4 py-3 rounded-2xl ${
                                             msg.sender === "user"
-                                                ? "bg-[#20202a] text-white rounded-tr-sm"
+                                                ? "bg-green-800 text-white rounded-tr-sm"
                                                 : "bg-[#f5f1eb] text-[#45414a] rounded-tl-sm"
                                         }`}
                                     >

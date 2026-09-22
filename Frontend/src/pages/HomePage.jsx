@@ -65,7 +65,7 @@ export default function HomePage() {
                             </p>
 
                             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                                <button className="group flex items-center justify-center gap-3 rounded-xl bg-blue-600 px-7 py-3.5 font-semibold text-white shadow-xl shadow-blue-600/20 transition hover:-translate-y-1 hover:bg-blue-700">
+                                <button className="group flex items-center justify-center gap-3 rounded-xl bg-green-700 px-7 py-3.5 font-semibold text-white shadow-xl shadow-blue-600/20 transition hover:-translate-y-1 hover:bg-blue-700">
                                     Start Studying
                                     <FaArrowRight className="transition group-hover:translate-x-1" />
                                 </button>
@@ -216,7 +216,7 @@ export default function HomePage() {
 
                         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                             <div className="group rounded-3xl border border-slate-200 bg-white p-7 transition duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50">
-                                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100 text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white">
+                                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100 text-blue-600 transition group-hover:bg-green-700 group-hover:text-white">
                                     <FaRobot size={22} />
                                 </div>
                                 <h3 className="text-xl font-bold">AI Study Planner</h3>
@@ -512,7 +512,7 @@ export default function HomePage() {
                                     "Daily study motivation",
                                 ].map((item) => (
                                     <div key={item} className="flex items-center gap-3">
-                                        <div className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 text-xs text-white">
+                                        <div className="flex h-7 w-7 items-center justify-center rounded-full bg-green-700 text-xs text-white">
                                             <FaCheck />
                                         </div>
                                         <span className="font-medium text-slate-700">{item}</span>
@@ -527,7 +527,7 @@ export default function HomePage() {
             {/* study streak */}
             <section className="bg-white py-24">
                 <div className="mx-auto max-w-5xl px-6">
-                    <div className="overflow-hidden rounded-4xl bg-linear-to-br from-blue-600 to-indigo-700 p-8 text-white shadow-2xl md:p-12">
+                    <div className="overflow-hidden rounded-4xl bg-linear-to-br from-green-600 to-green-900 p-8 text-white shadow-2xl md:p-12">
                         <div className="grid items-center gap-10 md:grid-cols-2">
                             <div>
                                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-2xl">
@@ -692,84 +692,13 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
-
-            {/* ai planner */}
-            <section id="how" className="bg-slate-950 py-24 text-white">
-                <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-2">
-                    <div>
-                        <div className="mb-5 inline-flex items-center gap-2 rounded-full  px-4 py-2 text-xl font-bold text-blue-300">
-                            <FaRobot />
-                            Powered by AI
-                        </div>
-
-                        <h2 className="text-4xl font-bold leading-tight md:text-5xl">
-                            Let AI build your
-                            <span className="text-blue-400"> study roadmap.</span>
-                        </h2>
-
-                        <p className="mt-6 max-w-xl text-lg leading-8 text-slate-400">
-                            Enter your subjects, exam date and available study
-                            hours. StudyMate creates a personalized roadmap that
-                            you can edit and follow.
-                        </p>
-
-                        <button className="mt-8 flex items-center gap-3 rounded-xl bg-white px-6 py-3.5 font-semibold text-slate-900 transition hover:bg-blue-50">
-                            Try AI Planner
-                            <FaArrowRight />
-                        </button>
-                    </div>
-
-                    <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-                        <div className="rounded-2xl bg-white p-6 text-slate-900">
-                            <div className="flex items-center gap-3 border-b border-slate-100 pb-5">
-                                <div className="rounded-xl bg-blue-100 p-3 text-blue-600">
-                                    <FaRobot />
-                                </div>
-
-                                <div>
-                                    <p className="font-bold">AI Study Planner</p>
-                                    <p className="text-xs text-slate-500">Create your personalized plan</p>
-                                </div>
-                            </div>
-
-                            <div className="mt-6 space-y-4">
-                                <div>
-                                    <label className="text-sm font-semibold">Your subjects</label>
-                                    <div className="mt-2 rounded-xl border border-slate-200 p-3 text-sm text-slate-500">
-                                        C Programming, Mathematics, English
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label className="text-sm font-semibold">Available study time</label>
-                                    <div className="mt-2 rounded-xl border border-slate-200 p-3 text-sm text-slate-500">
-                                        3 hours per day
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label className="text-sm font-semibold">Exam date</label>
-                                    <div className="mt-2 rounded-xl border border-slate-200 p-3 text-sm text-slate-500">
-                                        20 October 2026
-                                    </div>
-                                </div>
-
-                                <button className="w-full rounded-xl bg-blue-600 py-3 font-semibold text-white transition hover:bg-blue-700">
-                                    Generate Study Plan
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             {/* final call to action */}
             <section className="relative overflow-hidden bg-slate-950 py-24 text-white">
-                <div className="absolute -left-40 -top-40 h-96 w-96 rounded-full bg-blue-600/20 blur-3xl" />
+                <div className="absolute -left-40 -top-40 h-96 w-96 rounded-full bg-green-700/20 blur-3xl" />
                 <div className="absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-purple-600/20 blur-3xl" />
 
                 <div className="relative mx-auto max-w-4xl px-6 text-center">
-                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-600 text-2xl shadow-xl shadow-blue-600/30">
+                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-green-700 text-2xl shadow-xl shadow-blue-600/30">
                         <FaGraduationCap />
                     </div>
 
@@ -784,7 +713,7 @@ export default function HomePage() {
                     </p>
 
                     <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
-                        <Link to="/Register" className="group flex items-center justify-center gap-3 rounded-xl bg-blue-600 px-8 py-4 font-bold text-white shadow-xl shadow-blue-600/20 transition hover:-translate-y-1 hover:bg-blue-500">
+                        <Link to="/Register" className="group flex items-center justify-center gap-3 rounded-xl bg-green-700 px-8 py-4 font-bold text-white shadow-xl shadow-blue-600/20 transition hover:-translate-y-1 hover:bg-green-500">
                             Get Started
                             <FaArrowRight className="transition group-hover:translate-x-1" />
                         </Link>

@@ -542,7 +542,7 @@ const Progress = () => {
                         </div>
 
                         {/* Overall Progress */}
-                        <div className="rounded-[30px] bg-[#302b38] p-7 text-white">
+                        <div className="rounded-[30px] bg-green-600 p-7 text-white">
                             <div className="flex items-center justify-between">
                                 <div>
                                     <p className="text-sm text-white/60">

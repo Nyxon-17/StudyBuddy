@@ -82,7 +82,7 @@ const About = () => {
 
                 {/* Hero buttons */}
                 <div className="flex flex-wrap gap-3 sm:gap-4 mt-8 sm:mt-10">
-                  <button className="group flex items-center gap-3 px-5 sm:px-7 py-3 sm:py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold transition-all duration-300">
+                  <button className="group flex items-center gap-3 px-5 sm:px-7 py-3 sm:py-4 bg-green-700 hover:bg-blue-700 text-white rounded-full font-semibold transition-all duration-300">
                     Start Learning
                     <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -339,33 +339,6 @@ const About = () => {
                     grow every day.
                   </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Final CTA */}
-        <section className="px-6 pb-28 bg-white">
-          <div className="max-w-6xl mx-auto">
-            <div className="relative overflow-hidden rounded-[3rem] border border-blue-200 bg-linear-to-br from-blue-600 to-indigo-600 p-10 sm:p-16 text-center shadow-xl">
-
-              <div className="absolute w-80 h-80 bg-white/10 blur-[120px] rounded-full -top-40 left-1/2 -translate-x-1/2"></div>
-
-              <div className="relative">
-                <p className="text-blue-100 mb-5">
-                  YOUR SMARTER STUDY JOURNEY
-                </p>
-
-                <h2 className="text-4xl sm:text-6xl font-black mb-7 text-white">
-                  Ready to study
-                  <br />
-                  differently?
-                </h2>
-
-                <button className="inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-600 rounded-full font-bold hover:scale-105 transition-transform">
-                  Get Started
-                  <FaArrowRight />
-                </button>
               </div>
             </div>
           </div>

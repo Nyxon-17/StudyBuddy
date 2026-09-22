@@ -40,7 +40,7 @@ const DashboardNavbar = ({ setIsOpen }) => {
                 >
                     <FaBell />
 
-                    <span className="absolute top-2 right-2 w-2 h-2 bg-blue-600 rounded-full border-2 border-white" />
+                    <span className="absolute top-2 right-2 w-2 h-2 bg-green-700 rounded-full border-2 border-white" />
                 </button>
 
                 {/* User */}
